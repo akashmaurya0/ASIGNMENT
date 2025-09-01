@@ -1,4 +1,3 @@
-// backend/controllers/contactController.js
 import Contact from "../models/contactModel.js";
 
 export const saveContact = async (req, res) => {
