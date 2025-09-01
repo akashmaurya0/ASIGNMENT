@@ -1,0 +1,146 @@
+
+.text
+{
+    color:black;
+}
+.arrow
+{
+  margin-right: 20px;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to left,rgb(246, 253, 255),rgb(237, 253, 255),rgb(202, 243, 250));
+  width:100vw;
+  min-width: 99vw;
+}
+
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links li a:hover {
+  color: #00c4ff;
+}
+
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #575757;
+  list-style: none;
+  padding: 10px 0;
+  margin:10px 10px;
+  min-width: 180px;
+  border-radius: 5px;
+}
+
+.dropdown-menu li {
+  padding: 8px 15px;
+  
+}
+
+.dropdown-menu li a {
+  color: #ffffff;
+}
+
+.dropdown-menu li:hover {
+  background: #161616;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+
+.contact-btn {
+  background: #00c4ff;
+
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #0099cc;
+}
+
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: rgb(53, 52, 52);
+  color:white;
+}
+
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background: rgb(66, 66, 66);
+  color:wheat;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    flex-direction: column;
+    background: #ebeaea;
+    width: 100%;
+    text-align: center;
+    gap: 15px;
+    padding: 20px 0;
+    color: white;
+  }
+
+  .nav-links.open {
+    left: 0;
+  }
+
+  
+
+  .hamburger {
+    display: flex;
+  }
+}
+
